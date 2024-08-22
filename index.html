@@ -1,29 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3</title>
     <!-- icon cdn -->
-    <script src="https://kit.fontawesome.com/97fef78944.js" crossorigin="anonymous"></script>
-    <!-- tailwind + daisyUI cdn -->   
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/97fef78944.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind + daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind config -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                primary:'#ABEF5F',
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body>
-    
-</body>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#ABEF5F",
+              main:'#f4f4f4',
+            },
+          },
+        },
+      };
+    </script>
+    <!-- font setup -->
+    <style>
+      .font {
+        font-family: "Manrope", system-ui;
+      }
+    </style>
+  </head>
+  <body class="font">
+    <!-- header start -->
+    <header class="bg-[#fdfdfd]">
+      <!-- nav start -->
+      <nav class="w-11/12 md:w-10/12 mx-auto">
+        <!-- parent div -->
+        <div class="navbar flex flex-wrap justify-between pt-8 gap-2">
+          <!-- logo div -->
+          <div class="flex items-center space-x-2">
+            <div class="bg-primary rounded-full">
+              <i class="fa-solid fa-arrow-right -rotate-45 p-2"></i>
+            </div>
+            <a class="text-[32px] font-bold">Rinterio</a>
+          </div>
+          <!-- logo div -->
+           <!-- hidden icon div -->
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost lg:hidden bg-white shadow-sm rounded-full px-3 py-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <!-- hidden icon div -->
+           <!-- ul div -->
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-2 space-x-2">
+              <li class="font-bold text-black"><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- ul div -->
+           <!-- button div -->
+          <div class="space-x-4 hidden lg:flex">
+            <!-- icon -->
+            <div class="space-x-2 flex">
+              <i
+                class="fa-solid fa-magnifying-glass bg-white p-3 rounded-full drop-shadow-sm text-slate-500"
+              ></i>
+              <i
+                class="fa-solid fa-cart-shopping bg-white p-3 rounded-full drop-shadow-sm text-slate-500"
+              ></i>
+            </div>
+            <a class="btn bg-primary rounded-full">
+              <h4 class="font-bold">Book Consult</h4>
+              <div class="bg-[#070707] text-white rounded-full">
+                <i class="fa-solid fa-arrow-right p-2 -rotate-45"> </i>
+              </div>
+            </a>
+          </div>
+          <!-- button div  -->
+        </div>
+        <!-- parent div -->
+      </nav>
+      <!-- nav end   -->
+
+      <!-- banner start -->
+       <div class="w-11/12 md:w-10/12 mx-auto mt-6 pb-10 md:pb-20">
+        <div class="w-11/12 mx-auto">
+        <!-- img box -->
+         <div>
+            <img class="mx-auto" src="./assets/banner.png" alt="">
+         </div>
+        <!-- img box -->
+
+        <!-- text box -->
+         <div class="text-center mt-6">
+            <h1 class=" text-3xl md:text-4xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+            <p class="mt-6 text-[#494949]"> The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br class="hidden lg:block"> accents, and large windows that flood the space with natural light.</p>
+            <button class="btn border-2 border-primary bg-[#d3f6ad] rounded-full px-4 mt-6 w-full md:w-52">View Details 
+                <div class="bg-primary rounded-full">
+                    <i class="fa-solid fa-arrow-right p-2 -rotate-45"> </i>
+                  </div>
+            </button>
+         </div>
+        <!-- text box -->
+       </div> 
+       </div>
+      <!-- banner end   -->
+    </header>
+    <!-- header end   -->
+
+    <!-- main start  -->
+    <main class="bg-main ">
+      
+    </main>
+    <!-- main end    -->
+
+    <!-- footer start -->
+    <footer></footer>
+    <!-- footer end   -->
+  </body>
 </html>
